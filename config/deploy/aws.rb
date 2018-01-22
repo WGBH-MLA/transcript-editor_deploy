@@ -1,12 +1,12 @@
-raise ArgumentError, "Missing required environment variable, OV_HOST." unless ENV['OV_HOST']
-raise ArgumentError, "Missing required environment variable, OV_SSH_KEY." unless ENV['OV_SSH_KEY']
+raise ArgumentError, "Missing required environment variable, TRANSCRIPT_HOST." unless ENV['TRANSCRIPT_HOST']
+raise ArgumentError, "Missing required environment variable, TRANSCRIPT_SSH_KEY." unless ENV['TRANSCRIPT_SSH_KEY']
 
-server ENV['OV_HOST'],
+server ENV['TRANSCRIPT_HOST'],
   user: 'ec2-user',
   roles: %w{web app db},
   ssh_options: {
     user: 'ec2-user',
-    keys: [ENV['OV_SSH_KEY']],
+    keys: [ENV['TRANSCRIPT_SSH_KEY']],
     forward_agent: false,
     auth_methods: %w(publickey)
   }

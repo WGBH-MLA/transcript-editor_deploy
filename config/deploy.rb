@@ -1,8 +1,8 @@
 # For more options, see http://capistranorb.com/documentation/getting-started/configuration/#
 # config valid only for current version of Capistrano
 lock '3.3.5'
-set :application, 'openvault'
-set :repo_url, 'https://github.com/WGBH/openvault3.git'
+set :application, 'transcript-editor'
+set :repo_url, 'https://github.com/WGBH/transcript-editor.git'
 set :rails_env, 'production'
 
 # Require confirmation by user if the repo is in a dirty state.
