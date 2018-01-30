@@ -10,8 +10,4 @@ include GitHelper
 verify_git_status!
 
 set :linked_dirs, fetch(:linked_dirs, []).push('log')
-namespace :deploy do
-  after :updated, :ensure_jetty_is_installed do
-    invoke 'jetty:install'
-  end
-end
+set :linked_files, %w{config/database.yml config/application.yml}

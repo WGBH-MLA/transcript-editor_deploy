@@ -1,11 +1,9 @@
-# Open Vault Code Deployment
+# Transcript Editor Code Deployment
 
-This is the Capistrano project that deploys code and ingests records for
-[transcript-editor](https://github.com/WGBH/transcript-editor),
+This is the Capistrano project that deploys code for [transcript-editor](https://github.com/WGBH/transcript-editor),
 a website maintained by WGBH Media Library and Archives.
 
-This documentation is intended for use by WGBH-MLA staff. It is not expected to
-to work for the general public.
+This documentation is intended for use by WGBH-MLA staff. It is not expected to work for the general public.
 
 ## Prerequisites
 
@@ -14,6 +12,7 @@ Before deploying, ensure the following:
     fully provisioned.** (Click [here](https://github.com/WGBH/mla-playbooks)
     for inforamtion on provisioning servers for transcript-editor)
   * **You have the private key required to SSH into the host.**
+  * **See internal documentation for manual deployment steps.**
 
 ## Setup your local copy of the deployment repository
 
@@ -36,7 +35,7 @@ Before deploying, ensure the following:
 
 1. **Run `bundle install`**
 
-  If `bundle install` runs successfully, then you should be able to run a deployment or ingest records.
+  If `bundle install` runs successfully, then you should be able to run a deployment.
 
 ## Deploy
 
@@ -49,6 +48,3 @@ bundle exec cap aws deploy TRANSCRIPT_HOST=1.2.3.4 TRANSCRIPT_SSH_KEY=~/.ssh/xyz
 If there were no errors, then you should be able to see the transcript-editor website running in a web browser, at the target host's IP address.
 If there were errors, or if you can't see the running website, then please [file a bug](https://github.com/WGBH/transcript-editor_deploy/issues).
 
-## TODO
-
-error notification. issue #32.
