@@ -12,7 +12,7 @@ Before deploying, ensure the following:
     fully provisioned.** (Click [here](https://github.com/WGBH/mla-playbooks)
     for inforamtion on provisioning servers for transcript-editor)
   * **You have the private key required to SSH into the host.**
-  * **See internal documentation for manual deployment steps.**
+  * **See the "NYPL Transcript Editor Deployment Process" document in the MLA Wiki for the full deployment process.**
 
 ## Setup your local copy of the deployment repository
 
