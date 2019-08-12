@@ -6,9 +6,7 @@ set :repo_url, 'https://github.com/WGBH/transcript-editor.git'
 set :rails_env, 'production'
 set :rvm_ruby_version, '2.3.0'
 
-# set :passenger_environment_variables, { :path => '/home/ec2-user/bin/passenger-6.0.2/bin:$PATH' }
-# set :passenger_restart_with_touch, true
-# set :passenger_restart_command, 'rvmsudo /home/ec2-user/bin/passenger-6.0.2/bin/passenger-config restart-app /var/www/transcript-editor/current  --ignore-app-not-running'
+set :passenger_restart_command, 'rvmsudo /usr/sbin/apachectl restart'
 
 # Require confirmation by user if the repo is in a dirty state.
 include GitHelper
