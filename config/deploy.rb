@@ -13,7 +13,7 @@ else
   ask :branch, 'master'
 end
 
-set :passenger_restart_command, 'rvmsudo /usr/sbin/apachectl restart'
+set :passenger_restart_with_touch, true
 
 # Require confirmation by user if the repo is in a dirty state.
 include GitHelper
