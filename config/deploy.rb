@@ -7,8 +7,8 @@ set :rails_env, 'production'
 set :rvm_ruby_version, '2.3.0'
 
 # If the branch is not set with an env var, then ask for it.
-if ENV['AAPB_BRANCH']
-  set :branch, ENV['AAPB_BRANCH']
+if ENV['TRANSCRIPT_EDITOR_BRANCH']
+  set :branch, ENV['TRANSCRIPT_EDITOR_BRANCH']
 else
   ask :branch, 'master'
 end
