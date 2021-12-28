@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'capistrano', '~> 3.3.5'
+ruby '2.5.3'
+
+gem 'capistrano', '~> 3.16.0'
 gem 'capistrano-rvm'
 gem 'capistrano-bundler'
 gem 'capistrano-rails'
