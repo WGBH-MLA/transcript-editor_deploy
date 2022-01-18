@@ -29,7 +29,7 @@ namespace :deploy do
 end
 
 set :linked_dirs, fetch(:linked_dirs, []).push('log')
-set :linked_files, %w{config/database.yml config/application.yml}
+set :linked_files, %w{config/database.yml config/application.yml config/ci.yml}
 set :bundle_dir, "/var/www/transcript-editor/shared/bundle"
 
 after 'deploy:set_linked_dirs', 'deploy:remove_linked_dirs'
