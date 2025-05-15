@@ -1,3 +1,5 @@
 .capistrano
 .DS_store
 *.log
+secret/*.pem
+stuff
